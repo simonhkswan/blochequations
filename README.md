@@ -1,2 +1,2 @@
-## Simulation of Optical Bloch Equations in python
-See the iPython Notebook for plots and discussion.
+## Various computation physics problems explored
+See the iPython Notebook for plots and discussions.
