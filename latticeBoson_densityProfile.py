@@ -17,12 +17,12 @@ def profile(u,ax,col=[0,0,0]):
     R2 = 10*(u-1)**0.5
     R3 = 10*u**0.5
 
-    q1 = np.linspace(-R1,0,2301)
-    q2 = np.linspace(-R2,-R1,2301)
-    q3 = np.linspace(-R3,-R2,2301)
-    r1 = np.linspace(0,R1,2301)
-    r2 = np.linspace(R1,R2,2301)
-    r3 = np.linspace(R2,R3,2301)
+    q1 = np.linspace(-R1,0,4301)
+    q2 = np.linspace(-R2,-R1,4301)
+    q3 = np.linspace(-R3,-R2,4301)
+    r1 = np.linspace(0,R1,4301)
+    r2 = np.linspace(R1,R2,4301)
+    r3 = np.linspace(R2,R3,4301)
 
     m1 = N1(u-0.01*q1**2)
     m2 = N2(u-0.01*q2**2)
@@ -37,7 +37,7 @@ ax = fig.gca()
 ax.set_ylabel('number density, n')
 ax.set_xlabel('radius from center, r')
 ax.set_title('density profiles for bosons in lattice potential')
-ax.tight_layout()
+fig.tight_layout()
 
 n=15
 m=10.0

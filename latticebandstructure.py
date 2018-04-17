@@ -78,7 +78,7 @@ for V0 in Vs:
     Ut.append(U(V0)/tunnel)
 
 ax2.plot(Vs/Er,t,'b')
-ax3.plot(Vs/Er,Ut,'x-')
+ax3.plot(Vs/Er,Ut,'-')
 ax2.plot(Vs/Er,U(Vs),'r')
 ax2.plot(Vs/Er,W(Vs),'k')
 fig2.tight_layout()
